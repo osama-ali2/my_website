@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:my_website/utility/responsive.dart';
-import 'expertise_desktop.dart';
-import 'expertise_tablet.dart';
+import 'layouts/expertise_desktop.dart';
+import 'layouts/expertise_tablet.dart';
+import 'layouts/expertise_mobile.dart';
 
 class ExpertiseSection extends StatelessWidget {
   const ExpertiseSection({super.key});
@@ -11,7 +12,7 @@ class ExpertiseSection extends StatelessWidget {
     return Responsive(
       desktop: ExpertiseDesktop(),
       tablet: ExpertiseTablet(),
-      mobile: ExpertiseTablet(),
+      mobile: ExpertiseMobile(),
     );
   }
 }

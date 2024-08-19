@@ -12,8 +12,8 @@ class _Body extends StatelessWidget {
       child: ListView(
         controller: scrollProvider.controller,
         children:const [
-          HomeSection(),
-          AboutMeSection(),
+          // HomeSection(),
+          // AboutMeSection(),
           ExpertiseSection(),
           // CreationsSection(),
           // SkillsSection(),

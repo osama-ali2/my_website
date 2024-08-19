@@ -5,7 +5,7 @@ import 'package:flutter_html/flutter_html.dart';
 import 'package:my_website/utility/colors.dart';
 import 'package:my_website/utility/extentions/int_extensions.dart';
 
-import '../../../utility/constants.dart';
+import '../../../../utility/constants.dart';
 
 class AboutMeMobile extends StatelessWidget {
   const AboutMeMobile({super.key});

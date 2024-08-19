@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_website/providers/drawer_provider.dart';
 import 'package:my_website/providers/scroll_provider.dart';
+import 'package:my_website/providers/typing_text_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:url_strategy/url_strategy.dart';
@@ -21,24 +22,21 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(
-          create: (context) => ScrollProvider(),
-        ),
-        ChangeNotifierProvider(
-          create: (context) => DrawerProvider(),
-        ),
+        ChangeNotifierProvider(create: (context) => ScrollProvider()),
+        ChangeNotifierProvider(create: (context) => DrawerProvider()),
+        ChangeNotifierProvider(create: (context) => TypingTextProvider()),
       ],
-      child:  MaterialApp(
-          title: appTitle,
-          debugShowCheckedModeBanner: false,
-          theme: AppTheme.lightTheme,
-          darkTheme: AppTheme.darkTheme,
-          themeMode: ThemeMode.dark,
-          initialRoute: '/',
-          routes: {
-            '/': (context) => MainPage(),
-          },
-        ),
+      child: MaterialApp(
+        title: appTitle,
+        debugShowCheckedModeBanner: false,
+        theme: AppTheme.lightTheme,
+        darkTheme: AppTheme.darkTheme,
+        themeMode: ThemeMode.dark,
+        initialRoute: '/',
+        routes: {
+          '/': (context) => MainPage(),
+        },
+      ),
     );
   }
 }
