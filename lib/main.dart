@@ -3,7 +3,6 @@ import 'package:my_website/providers/drawer_provider.dart';
 import 'package:my_website/providers/scroll_provider.dart';
 import 'package:my_website/providers/typing_text_provider.dart';
 import 'package:provider/provider.dart';
-import 'package:responsive_framework/responsive_framework.dart';
 import 'package:url_strategy/url_strategy.dart';
 import 'ui/main/main_page.dart';
 import 'utility/app_theme.dart';

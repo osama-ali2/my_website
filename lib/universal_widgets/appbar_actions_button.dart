@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:my_website/utility/colors.dart';
-import 'package:my_website/utility/constants.dart';
 import 'package:provider/provider.dart';
 
 import '../animations/entrance_fader.dart';

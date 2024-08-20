@@ -9,14 +9,14 @@ class ExpertiseCard extends StatefulWidget {
   final String expertiseImage;
   final String expertiseTitle;
   final String expertiseDescription;
-  final double backFontSize;
+  // final double backFontSize;
 
   const ExpertiseCard({
     Key? key,
     required this.expertiseImage,
     required this.expertiseTitle,
     required this.expertiseDescription,
-    this.backFontSize = 20,
+    // this.backFontSize = 20,
   }) : super(key: key);
 
   @override
@@ -54,7 +54,6 @@ class _ExpertiseCardState extends State<ExpertiseCard> {
           expertiseDesc: widget.expertiseDescription,
           expertiseTitle: '',
           isHover: isHover,
-          fontSize: widget.backFontSize,
         ),
         front: _ExpertiseCardFront(
           expertiseTitle: widget.expertiseTitle,
@@ -124,12 +123,12 @@ class _ExpertiseCardBack extends StatelessWidget {
     required this.expertiseDesc,
     required this.expertiseTitle,
     required this.isHover,
-    required this.fontSize,
+    // required this.fontSize,
   });
 
   final String expertiseDesc, expertiseTitle;
   final bool isHover;
-  final double fontSize;
+  // final double fontSize;
 
   @override
   Widget build(BuildContext context) {
@@ -137,10 +136,10 @@ class _ExpertiseCardBack extends StatelessWidget {
       expertiseTitle: expertiseTitle,
       isHover: isHover,
       child: Text(
-        expertiseDesc,
+        expertiseDesc.toUpperCase(),
         textAlign: TextAlign.center,
         style: TextStyle(
-          fontSize: fontSize,
+          fontSize: 14,
           color: textColor,
         ),
       ),

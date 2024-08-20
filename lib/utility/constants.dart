@@ -1,5 +1,6 @@
 //Paths
-import 'desgin/app_dimensions.dart';
+
+import 'colors.dart';
 
 const imagesPath = "assets/images/";
 const iconsPath = "assets/icons/";
@@ -23,9 +24,9 @@ const upworkIconUrl =
     "https://img.icons8.com/ios-filled/50/000000/upwork.png";
 
 // const horizontalPadding = 150;
-double hPadDesktop = 100.0;
-double hPadTablet = 16.0;
-double hPadMobile = 16.0;
+const double hPadDesktop = 100.0;
+const double hPadTablet = 16.0;
+const double hPadMobile = 16.0;
 
 const vPad = 20;
 const double borderRadius = 30;
@@ -162,3 +163,6 @@ const String skillTitle0 =
     '''My skills demonstrating expertise,\nexperience, and passion in ''';
 const String skillTitle1 = '''App Development ''';
 const String skillTitle2 = '''to drive\n success and innovation''';
+
+final String copyRightHTML =
+'''<p style="color: #${textColor2.value.toRadixString(16).padLeft(8, '0').toUpperCase()}">&copy 2024 Osama Ali. All Rights Reserved</p>''';

@@ -1,5 +1,9 @@
 import 'package:my_website/models/creation_model.dart';
+import 'package:my_website/models/skill_model.dart';
+import 'package:my_website/models/statistics_model.dart';
 import 'package:my_website/utility/constants.dart';
+
+import '../models/expertise_model.dart';
 
 class Data {
   static List<CreationModel> getCreations() {
@@ -42,4 +46,50 @@ class Data {
       ),
     ];
   }
+
+  static List<ExpertiseModel> getExpertise() {
+    return [
+      ExpertiseModel(
+        image: 'about_me.jpg',
+        title: 'Ui/Ux',
+        description: '4+ years in Mobile Development',
+      ),
+      ExpertiseModel(
+        image: 'about_me.jpg',
+        title: 'Ui/Ux',
+        description: '4+ years in Mobile Development',
+      ),
+      ExpertiseModel(
+        image: 'about_me.jpg',
+        title: 'Ui/Ux',
+        description: '4+ years in Mobile Development',
+      ),
+      ExpertiseModel(
+        image: 'about_me.jpg',
+        title: 'Ui/Ux',
+        description: '4+ years in Mobile Development',
+      ),
+    ];
+  }
+
+  static List<StatisticsModel> getStatistics() {
+    return [
+      StatisticsModel(description: 'Years of Experience', number: '+7',),
+      StatisticsModel(description: 'Years of Experience', number: '+7',),
+      StatisticsModel(description: 'Years of Experience', number: '+7',),
+      StatisticsModel(description: 'Years of Experience', number: '+7',),
+    ];
+  }
+
+
+  static List<SkillModel> getSkills() {
+    return [
+      SkillModel(icon: 'github.svg', name: 'Github', percent: '85'),
+      SkillModel(icon: 'github.svg', name: 'Github', percent: '85'),
+      SkillModel(icon: 'github.svg', name: 'Github', percent: '85'),
+      SkillModel(icon: 'github.svg', name: 'Github', percent: '85'),
+      SkillModel(icon: 'github.svg', name: 'Github', percent: '85'),
+    ];
+  }
+
 }

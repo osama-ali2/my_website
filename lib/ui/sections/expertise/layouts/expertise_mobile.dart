@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_website/utility/colors.dart';
-import 'package:my_website/utility/expertise_utils.dart';
-import 'package:my_website/utility/extentions/int_extensions.dart';
-import 'package:my_website/utility/statistics_utils.dart';
+import 'package:my_website/utility/data.dart';
 import '../../../../utility/constants.dart';
 import '../widgets/expertise_card.dart';
 import '../widgets/center_image.dart';
@@ -101,21 +99,20 @@ class ExpertiseMobile extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: List.generate(2, (index) {
               return StatisticsCard(
-                number: StatisticsUtils.numbers[index],
-                description: StatisticsUtils.titles[index],
+                number: Data.getStatistics()[index].number,
+                description: Data.getStatistics()[index].description,
                 widthFactor: .38,
                 heightFactor: .12,
               );
             }).toList(),
           ),
           Spacer(),
-
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: List.generate(2, (index) {
               return StatisticsCard(
-                number: StatisticsUtils.numbers[index + 2],
-                description: StatisticsUtils.titles[index + 2],
+                number: Data.getStatistics()[index + 2].number,
+                description:  Data.getStatistics()[index + 2].description,
                 widthFactor: .38,
                 heightFactor: .12,
               );
@@ -128,7 +125,7 @@ class ExpertiseMobile extends StatelessWidget {
   }
 
   ExpertiseCard getCard(int index) {
-    var model = ExpertiseModel.getExpertise()[index];
+    var model = Data.getExpertise()[index];
     return ExpertiseCard(
       expertiseImage: '${imagesPath}${model.image}',
       expertiseTitle: '${model.title}',

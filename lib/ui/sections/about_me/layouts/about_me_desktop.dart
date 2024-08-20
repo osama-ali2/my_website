@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_html/flutter_html.dart';
 import 'package:my_website/providers/typing_text_provider.dart';
 import 'package:my_website/utility/colors.dart';
 import 'package:my_website/utility/extentions/int_extensions.dart';

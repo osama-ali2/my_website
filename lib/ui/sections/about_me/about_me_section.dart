@@ -1,9 +1,17 @@
 import 'package:flutter/material.dart';
 
 import '../../../utility/responsive.dart';
-import 'layouts/about_me_desktop.dart';
-import 'layouts/about_me_mobile.dart';
-import 'layouts/about_me_tablet.dart';
+
+
+import 'dart:async';
+
+import 'package:my_website/providers/typing_text_provider.dart';
+import 'package:my_website/utility/colors.dart';
+import 'package:my_website/utility/extentions/int_extensions.dart';
+import 'package:provider/provider.dart';
+
+import '../../../../utility/constants.dart';
+
 
 // class AboutMeSection extends StatelessWidget {
 //   const AboutMeSection({super.key});
@@ -17,17 +25,6 @@ import 'layouts/about_me_tablet.dart';
 //     );
 //   }
 // }
-
-import 'dart:async';
-
-import 'package:flutter/material.dart';
-import 'package:flutter_html/flutter_html.dart';
-import 'package:my_website/providers/typing_text_provider.dart';
-import 'package:my_website/utility/colors.dart';
-import 'package:my_website/utility/extentions/int_extensions.dart';
-import 'package:provider/provider.dart';
-
-import '../../../../utility/constants.dart';
 
 class AboutMeSection extends StatelessWidget {
   const AboutMeSection({super.key});

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../../../../utility/constants.dart';
-import '../../../../utility/desgin/app_dimensions.dart';
 
 class HomeImage extends StatelessWidget {
   const HomeImage({

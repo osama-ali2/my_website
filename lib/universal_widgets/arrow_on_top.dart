@@ -4,7 +4,6 @@ import 'package:my_website/utility/colors.dart';
 import 'package:provider/provider.dart';
 
 import '../providers/scroll_provider.dart';
-import '../utility/desgin/app_dimensions.dart';
 class ArrowOnTop extends StatefulWidget {
   const ArrowOnTop({Key? key}) : super(key: key);
 
@@ -19,7 +18,7 @@ class ArrowOnTopState extends State<ArrowOnTop> {
     // final appProvider = Provider.of<AppProvider>(context);
     final scrollProvider = Provider.of<ScrollProvider>(context);
     return Positioned(
-      bottom: AppDimensions.normalize(30),
+      bottom: 30,
       right: 20,
       child: EntranceFader(
         offset: const Offset(0, 20),

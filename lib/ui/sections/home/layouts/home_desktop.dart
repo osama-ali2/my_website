@@ -1,20 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:my_website/utility/app.dart';
 import 'package:my_website/utility/extentions/int_extensions.dart';
 import 'package:my_website/universal_widgets/button_with_arrow.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../animations/entrance_fader.dart';
 import '../../../../utility/colors.dart';
 import '../../../../utility/constants.dart';
-import '../../../../utility/appbar_utils.dart';
-import '../../../../utility/desgin/app_dimensions.dart';
-import '../../../../utility/desgin/space.dart';
-import '../../../../universal_widgets/external_links.dart';
-import '../../../../universal_widgets/appbar_actions_button.dart';
-import '../../../../universal_widgets/signature_image.dart';
-import 'home_mobile.dart';
 import '../widgets/_app_bar_desktop.dart';
 import '../widgets/home_image.dart';
 

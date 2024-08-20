@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:my_website/ui/sections/home/layouts/home_mobile.dart';
 import 'package:my_website/utility/colors.dart';
 import 'package:my_website/utility/extentions/int_extensions.dart';
 import 'package:provider/provider.dart';
 
 import '../providers/scroll_provider.dart';
-import '../ui/sections/home/layouts/home_tablet.dart';
 import '../utility/appbar_utils.dart';
 import '../utility/constants.dart';
 import 'external_links.dart';

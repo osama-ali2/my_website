@@ -3,8 +3,6 @@ import 'package:provider/provider.dart';
 
 import '../../../../providers/drawer_provider.dart';
 import '../../../../utility/colors.dart';
-import '../../../../utility/desgin/app_dimensions.dart';
-import '../../../../utility/desgin/space.dart';
 import '../../../../universal_widgets/signature_image.dart';
 
 class AppBarMobTab extends StatelessWidget {

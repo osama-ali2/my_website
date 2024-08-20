@@ -1,10 +1,8 @@
-import 'package:flip_card/flip_card.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:my_website/utility/colors.dart';
 import 'package:my_website/utility/extentions/int_extensions.dart';
 
-import '../../utility/constants.dart';
+import '../../../utility/constants.dart';
 
 class CreationsSection extends StatelessWidget {
   const CreationsSection({super.key});

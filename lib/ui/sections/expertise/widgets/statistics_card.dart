@@ -22,7 +22,6 @@ class StatisticsCard extends StatelessWidget {
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
     var height = MediaQuery.of(context).size.height;
-    var textScale = width * .0007;
     return Container(
       width: width * widthFactor,
       height: height * heightFactor,

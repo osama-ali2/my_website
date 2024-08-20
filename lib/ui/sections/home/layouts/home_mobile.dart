@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:my_website/utility/desgin/app_dimensions.dart';
 import 'package:my_website/utility/extentions/int_extensions.dart';
 import 'package:my_website/universal_widgets/button_with_arrow.dart';
 

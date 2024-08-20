@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:my_website/utility/colors.dart';
 import 'package:my_website/utility/extentions/int_extensions.dart';
-import 'package:my_website/utility/statistics_utils.dart';
 import '../../../../utility/constants.dart';
-import '../../../../utility/expertise_utils.dart';
+import '../../../../utility/data.dart';
 import '../widgets/expertise_card.dart';
 import '../widgets/center_image.dart';
 import '../widgets/statistics_card.dart';
@@ -78,10 +77,10 @@ class ExpertiseTablet extends StatelessWidget {
           vPad.height,
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: List.generate(StatisticsUtils.titles.length, (index){
+            children: List.generate(Data.getStatistics().length, (index){
               return StatisticsCard(
-                number: StatisticsUtils.numbers[index],
-                description: StatisticsUtils.titles[index],
+                number: Data.getStatistics()[index].number,
+                description: Data.getStatistics()[index].description,
                 widthFactor: .21,
                 heightFactor: .18,
               );
@@ -94,7 +93,7 @@ class ExpertiseTablet extends StatelessWidget {
   }
 
   ExpertiseCard getCard(int index) {
-    var model = ExpertiseModel.getExpertise()[index];
+    var model = Data.getExpertise()[index];
     return ExpertiseCard(
       expertiseImage: '${imagesPath}${model.image}',
       expertiseTitle: '${model.title}',
